@@ -1,3 +1,13 @@
+---
+title: Atmos Weather App
+emoji: ⛅
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Atmos: Full Stack Weather App
 
 **Built by Ehab Hesham** for the PM Accelerator AI Engineer Intern technical assessment.
