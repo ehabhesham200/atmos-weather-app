@@ -136,4 +136,5 @@ The `package.json` files in `backend/` and `frontend/` are the requirements file
 ## About PM Accelerator
 The Product Manager Accelerator Program supports PM professionals through every stage of their careers, from students looking for entry-level jobs to directors growing into leadership roles, via hands-on AI learning programs, real-world product practice, and a global mentor community. See the [Product Manager Accelerator LinkedIn page](https://www.linkedin.com/school/pmaccelerator/). This description is also shown in-app via the "About PM Accelerator" button.
 #   a t m o s - w e a t h e r - a p p  
+ #   a t m o s - w e a t h e r - a p p  
  
