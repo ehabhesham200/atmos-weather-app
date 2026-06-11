@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="560" fill="#ffffff"/>
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">Atmos Weather App - System Architecture</text>
+
+  <!-- Frontend column -->
+  <rect x="30" y="70" width="280" height="430" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="170" y="100" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4ed8">FRONTEND (Browser)</text>
+  <text x="170" y="120" text-anchor="middle" font-size="12" fill="#475569">React 18 + Vite, port 5173</text>
+
+  <rect x="55" y="140" width="230" height="44" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="170" y="158" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">SearchBar</text>
+  <text x="170" y="174" text-anchor="middle" font-size="11" fill="#64748b">city / zip / landmark / lat,lon</text>
+
+  <rect x="55" y="194" width="230" height="44" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="170" y="212" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">CurrentWeather</text>
+  <text x="170" y="228" text-anchor="middle" font-size="11" fill="#64748b">temp, humidity, wind, UV, sunrise</text>
+
+  <rect x="55" y="248" width="230" height="44" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="170" y="266" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Forecast</text>
+  <text x="170" y="282" text-anchor="middle" font-size="11" fill="#64748b">next 5 days + traveler tips</text>
+
+  <rect x="55" y="302" width="230" height="44" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="170" y="320" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">MapView</text>
+  <text x="170" y="336" text-anchor="middle" font-size="11" fill="#64748b">Leaflet map with location pin</text>
+
+  <rect x="55" y="356" width="230" height="44" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="170" y="374" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">RecordsPanel</text>
+  <text x="170" y="390" text-anchor="middle" font-size="11" fill="#64748b">save / edit / delete / export records</text>
+
+  <rect x="55" y="410" width="230" height="44" rx="6" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="170" y="428" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">api.js</text>
+  <text x="170" y="444" text-anchor="middle" font-size="11" fill="#64748b">fetch wrapper, /api proxy to :4000</text>
+
+  <!-- Backend column -->
+  <rect x="370" y="70" width="280" height="430" rx="10" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="510" y="100" text-anchor="middle" font-size="16" font-weight="bold" fill="#15803d">BACKEND (API server)</text>
+  <text x="510" y="120" text-anchor="middle" font-size="12" fill="#475569">Node.js + Express, port 4000</text>
+
+  <rect x="395" y="140" width="230" height="44" rx="6" fill="#ffffff" stroke="#86efac"/>
+  <text x="510" y="158" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">GET /api/weather</text>
+  <text x="510" y="174" text-anchor="middle" font-size="11" fill="#64748b">current conditions + 5-day forecast</text>
+
+  <rect x="395" y="194" width="230" height="44" rx="6" fill="#ffffff" stroke="#86efac"/>
+  <text x="510" y="212" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">/api/records (CRUD)</text>
+  <text x="510" y="228" text-anchor="middle" font-size="11" fill="#64748b">create, read, update, delete, export</text>
+
+  <rect x="395" y="248" width="230" height="44" rx="6" fill="#ffffff" stroke="#86efac"/>
+  <text x="510" y="266" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">geocode.js</text>
+  <text x="510" y="282" text-anchor="middle" font-size="11" fill="#64748b">turns any input into coordinates</text>
+
+  <rect x="395" y="302" width="230" height="44" rx="6" fill="#ffffff" stroke="#86efac"/>
+  <text x="510" y="320" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">weather.js</text>
+  <text x="510" y="336" text-anchor="middle" font-size="11" fill="#64748b">fetches + reshapes weather data</text>
+
+  <rect x="395" y="356" width="230" height="44" rx="6" fill="#ffffff" stroke="#86efac"/>
+  <text x="510" y="374" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">validate.js / errors.js</text>
+  <text x="510" y="390" text-anchor="middle" font-size="11" fill="#64748b">input rules + clean error responses</text>
+
+  <rect x="395" y="410" width="230" height="44" rx="6" fill="#ffffff" stroke="#86efac"/>
+  <text x="510" y="428" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">MongoDB (Mongoose)</text>
+  <text x="510" y="444" text-anchor="middle" font-size="11" fill="#64748b">embedded server, zero setup</text>
+
+  <!-- External column -->
+  <rect x="710" y="70" width="220" height="430" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="820" y="100" text-anchor="middle" font-size="16" font-weight="bold" fill="#c2410c">EXTERNAL APIs</text>
+  <text x="820" y="120" text-anchor="middle" font-size="12" fill="#475569">all free, no API keys</text>
+
+  <rect x="730" y="140" width="180" height="56" rx="6" fill="#ffffff" stroke="#fdba74"/>
+  <text x="820" y="162" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Open-Meteo Forecast</text>
+  <text x="820" y="180" text-anchor="middle" font-size="11" fill="#64748b">current + future weather</text>
+
+  <rect x="730" y="212" width="180" height="56" rx="6" fill="#ffffff" stroke="#fdba74"/>
+  <text x="820" y="234" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Open-Meteo Archive</text>
+  <text x="820" y="252" text-anchor="middle" font-size="11" fill="#64748b">historical weather (1940+)</text>
+
+  <rect x="730" y="284" width="180" height="56" rx="6" fill="#ffffff" stroke="#fdba74"/>
+  <text x="820" y="306" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Open-Meteo Geocoding</text>
+  <text x="820" y="324" text-anchor="middle" font-size="11" fill="#64748b">cities and postal codes</text>
+
+  <rect x="730" y="356" width="180" height="56" rx="6" fill="#ffffff" stroke="#fdba74"/>
+  <text x="820" y="378" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Nominatim (OSM)</text>
+  <text x="820" y="396" text-anchor="middle" font-size="11" fill="#64748b">landmarks + fuzzy search</text>
+
+  <rect x="730" y="428" width="180" height="56" rx="6" fill="#ffffff" stroke="#fdba74"/>
+  <text x="820" y="450" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">CARTO tiles</text>
+  <text x="820" y="468" text-anchor="middle" font-size="11" fill="#64748b">dark map images (browser)</text>
+
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <line x1="310" y1="270" x2="370" y2="270" stroke="#475569" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <text x="340" y="258" text-anchor="middle" font-size="11" fill="#475569">JSON</text>
+  <line x1="650" y1="270" x2="710" y2="270" stroke="#475569" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <text x="680" y="258" text-anchor="middle" font-size="11" fill="#475569">HTTPS</text>
+  <line x1="310" y1="456" x2="710" y2="456" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+  <text x="510" y="475" text-anchor="middle" font-size="11" fill="#64748b">map tiles load straight from the browser (skips the backend)</text>
+</svg>

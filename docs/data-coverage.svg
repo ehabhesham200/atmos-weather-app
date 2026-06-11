@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 230" font-family="DejaVu Sans, sans-serif">
+  <!-- labels above bars -->
+  <text x="380" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d4ed8">History archive</text>
+  <text x="380" y="76" text-anchor="middle" font-size="11" fill="#475569">real recorded weather, day by day, since 1940</text>
+
+  <text x="795" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#c2410c">Forecast</text>
+  <text x="795" y="76" text-anchor="middle" font-size="11" fill="#475569">today + the next 14 days</text>
+
+  <!-- bars -->
+  <rect x="60" y="92" width="640" height="40" rx="8" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="700" y="92" width="190" height="40" rx="8" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5"/>
+
+  <!-- today marker -->
+  <line x1="700" y1="78" x2="700" y2="150" stroke="#1e293b" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <!-- axis labels -->
+  <text x="60" y="168" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">1940</text>
+  <text x="700" y="168" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">today</text>
+  <text x="890" y="168" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">+14 days</text>
+
+  <text x="480" y="205" text-anchor="middle" font-size="11.5" fill="#64748b">If your saved date range covers both sides of "today", Atmos asks both services and stitches the answers together automatically.</text>
+</svg>
