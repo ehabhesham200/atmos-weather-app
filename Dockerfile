@@ -1,15 +1,14 @@
 # Hugging Face Spaces runs this container and routes traffic to port 7860.
 FROM node:20
 
-RUN useradd -m -u 1000 user
-USER user
-ENV HOME=/home/user
-WORKDIR /home/user/app
+USER node
+ENV HOME=/home/node
+WORKDIR /home/node/app
 
-COPY --chown=user frontend ./frontend
+COPY --chown=node frontend ./frontend
 RUN cd frontend && npm ci && npm run build
 
-COPY --chown=user backend ./backend
+COPY --chown=node backend ./backend
 RUN cd backend && npm ci
 
 ENV PORT=7860
